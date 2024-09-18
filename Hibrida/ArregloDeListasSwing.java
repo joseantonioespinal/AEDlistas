@@ -24,7 +24,7 @@ public class ArregloDeListasSwing extends JFrame {
 
         // Crear componentes
         JLabel nombreLabel = new JLabel("Nombre:");
-        nombreLabel.setBounds(10, 10, 100, 25);
+        nombreLabel.setBounds(100, 100, 100, 25);
         add(nombreLabel);
 
         nombreTextField = new JTextField();
@@ -67,6 +67,7 @@ public class ArregloDeListasSwing extends JFrame {
     public void insertarEnArreglo(ListaEnlazada[] arreglo, String nombre) {
         int indice = obtenerIndicePorLetra(nombre.charAt(0));
         arreglo[indice].insertar(nombre);
+        
     }
 
     // Mostrar todas las listas enlazadas del arreglo
